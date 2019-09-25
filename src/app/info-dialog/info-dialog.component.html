@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+  <pre>{{data.content}}</pre>
+  <label>{{data.showDatetime | date: 'yyyy年MM月dd日 hh點mm分'}}</label>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">確定</button>
+</div>
