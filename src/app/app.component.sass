@@ -1,26 +1,21 @@
 .body
   padding: 0
-  display:flex
-  flex-direction: row
+  margin:0
 
 .main
-  width: 25%
-  padding: 0 0 0 8%
-  justify-content: flex-start
-  align-items: flex-start
-  flex-direction: row
+  width:100vw
 
 #news
-  width: 100%
   height: 500px
-  display:flex
-  justify-content: flex-end
-  align-items: flex-end
   font-size: 14px
+  padding: 15% 8% 0% 8% 
+  position:relative
+  top:0px
 
 table
   width: 100%
   box-shadow: none
+  display:flex
 
 .navbar
   margin: 0%
@@ -33,10 +28,6 @@ table
   font-family: Roboto,"Helvetica Neue",sans-serif
   font-size: 20px
   line-height: 21px
-
-.item
-  margin: 0px
-  padding: 0px 5px
 
 .en
   margin: 0px
@@ -62,15 +53,22 @@ button
          background-color:#6C0852
 
 .move
+  width: 100%
   flex-wrap: wrap
   display: flex
   justify-content: center
   align-items: center
+  margin: 0
+  padding: 0
+
+@media (max-width: 768px)
+  .move
+    width: 50%
 
 .word
-  margin: 60px
-  width: 200px
-  height: 100px
+  padding: 0px 0px 0px 0px
+  width: 13vw
+  height: 25vh
 
 .n 
   width: 100%
@@ -78,39 +76,37 @@ button
   position: relative
 
 .wordn
-  width: 0
-  height: 0
+  width: 0%
+  height: 0%
   position: absolute
   border-style: solid
-  border-width: 180px 0 0 180px
-  border-color: transparent transparent transparent #B24B97
-  animation: wordn 2s infinite linear
-
-
-.wordn:hover
-  transition: transform 300ms ease-in-out
-  transform: translate(200px,150px) rotate(20deg)
-
+  border-width: 140px 0 0 140px
+  border-color: transparent  transparent transparent #B24B97
+  animation: wordn 2s linear
+  animation-iteration-count:3
 
 .wordn-1
         width: 0
         height: 0
-        top: 80px
-        left: 80px
+        top: 60px
+        left:60px
         position: absolute
         border-style: solid
-        border-width: 0 0 100px 100px
+        border-width: 0 0 80px 80px
         border-color: transparent transparent #D77BBE transparent
-        animation: wordn-1 2s infinite linear
+        animation: wordn-1 2s linear
+        animation-iteration-count:3
 
          
 .link-right
         width: 2px
-        height: 180px
-        left: 176px
+        height: 140px
+        left:138px
+        top:0px
         position: absolute
         border-right: solid #921E73 2px
-        animation: link-right 2s infinite linear
+        animation: link-right 2s linear
+        animation-iteration-count:3
 
 @keyframes wordn
   0%
@@ -118,7 +114,7 @@ button
   25%
 
   50%
-     border-width: 180px 0 0 100px
+
   
   75%
   
@@ -130,7 +126,7 @@ button
   25%
   
   50%
-      border-width: 0 0 100px 60px
+   border-width: 0 0 60px 60px
   
   75%
   
@@ -163,28 +159,31 @@ button
 
 .wordt
         width: 1px
-        height: 180px
-        left: 90px
+        height: 140px
+        left: 70px
         position: absolute
         border-right: solid #178039 2px
-        animation: wordt 2s infinite linear
+        animation: wordt 2s linear
+        animation-iteration-count:3
 
 .wordt-1
-        width: 180px
+        width: 140px
         height: 1px
         position: absolute
         border-top: solid #178039 2px
-        animation: wordt-1 2s infinite linear
+        animation: wordt-1 2s linear
+        animation-iteration-count:3
 
 .wordt-2
         width: 0
         height: 0
-        left: 90px
+        left: 70px
         position: absolute
         border-style: solid
-        border-width: 100px 100px 0 0
+        border-width: 70px 70px 0 0
         border-color: #57C47A transparent transparent transparent
-        animation: wordt-2 2s infinite linear
+        animation: wordt-2 2s linear
+        animation-iteration-count:3
 
 @keyframes wordt
   0%
@@ -192,7 +191,7 @@ button
   25%
 
   50%
-    height: 180px
+    height: 140px
     left: 20px
 
   75%
@@ -205,7 +204,7 @@ button
   25%
 
   50%
-    width: 180px
+    width: 140px
     left: 20px
 
   75%
@@ -238,34 +237,37 @@ button
   position: relative
 
 .wordu
-        width: 180px
-        height: 180px
+        width: 140px
+        height: 140px
         position: absolute
-        border-radius: 0px 0px 100px 100px
+        border-radius: 0px 0px 70px 70px
         border: 2px solid #666
         border-color: transparent #EB6101 #EB6101  #EB6101
-        animation: wordu 2s infinite linear
+        animation: wordu 2s linear
+        animation-iteration-count:3
 
 .wordu-1
-        width: 180px
-        height: 180px
+        width: 140px
+        height: 140px
         position: absolute
-        border-radius: 0px 0px 100px 100px
+        border-radius: 0px 0px 70px 70px
         background: linear-gradient(135deg, transparent 127px, #F4AA76 0) 
         background-size: 100% 100%
         background-repeat: no-repeat
-        animation: wordu-1 2s infinite linear
+        animation: wordu-1 2s linear
+        animation-iteration-count:3
 
 .wordu-2
-        width: 60px
-        height: 60px
-        left:100px
-        top: 100px
+        width: 40px
+        height: 40px
+        left:80px
+        top: 80px
         position: absolute
         border-radius: 0px 0px 80px 0px
         border: 2px solid #666
         border-color: transparent   #FFCFAE #FFCFAE transparent 
-        animation: wordu-2 2s infinite linear
+        animation: wordu-2 2s linear
+        animation-iteration-count:3
 
 @keyframes wordu
   0%
@@ -317,53 +319,57 @@ button
   position: relative
 
 .wordb
-        width: 60px
-        height: 180px
+        width: 40px
+        height: 140px
         position: absolute
         background-color: #528CD3
         z-index:1
-        animation: wordb 2s infinite linear
+        animation: wordb 2s linear
+        animation-iteration-count:3
 
 .wordb-1
-        width: 160px
-        height: 100px
+        width: 120px
+        height: 75px
         position: absolute
         background-color: #1D497E
         border-radius: 0px 140px 140px 0px
-        animation: wordb-1 2s infinite linear
-        
+        animation: wordb-1 2s linear
+        animation-iteration-count:3
 
 .wordb-2
-        width: 180px
-        height: 100px
+        width: 140px
+        height: 70px
         position: absolute
-        top:80px
+        top:70px
         background-color: #A4CBF8
         border-radius: 0px 140px 140px 0px
-        animation: wordb-2 2s infinite linear
+        animation: wordb-2 2s linear
+        animation-iteration-count:3
 
 .wordb-3
-        width: 60px
-        height: 60px
-        left:80px
-        top: 15px
+        width: 30px
+        height: 30px
+        left:75px
+        top: 20px
         position: absolute
-        border-radius: 0px 200px 250px 0px
+        border-radius: 0px 180px 200px 0px
         border: 2px solid #666
         border-color: transparent #FCF8F8 transparent transparent 
-        animation: wordb-3 2s infinite linear
+        animation: wordb-3 2s  linear
+        animation-iteration-count:3
 
 
 .wordb-4
-        width: 60px
-        height: 80px
-        left:100px
-        top: 90px
+        width: 30px
+        height: 40px
+        left:90px
+        top: 80px
         position: absolute
-        border-radius: 0px 200px 250px 0px
+        border-radius: 0px 200px 200px 0px
         border: 2px solid #666
         border-color: transparent #FCF8F8 transparent transparent 
-        animation: wordb-4 2s infinite linear
+        animation: wordb-4 2s linear
+        animation-iteration-count:3
 
 @keyframes wordb
   0%
@@ -371,7 +377,7 @@ button
   25%
 
   50%
-    width: 80px
+    width: 60px
     height: 30px
     border-radius: 0px 140px 140px 0px
 
@@ -458,56 +464,60 @@ button
   position: relative
 
 .worde
-        width: 80px
-        height: 180px
+        width: 60px
+        height: 140px
         position: absolute
         background-color: #EB6101
         z-index:1
-        animation: worde 2s infinite linear
+        animation: worde 2s linear
+        animation-iteration-count:3
 
 .worde-1
         width: 0
         height: 0
-        left: 80px
+        left: 60px
         position: absolute
         border-style: solid
-        border-width: 90px 90px 0 0
+        border-width: 70px 70px 0 0
         border-color: #F6A700 transparent transparent transparent
-        animation: worde-1 2s infinite linear
+        animation: worde-1 2s linear
+        animation-iteration-count:3
 
 .worde-2
         width: 0
         height: 0
-        left: 80px
-        top:90px
+        left: 60px
+        top:70px
         position: absolute
         border-style: solid
-        border-width: 90px 0px 0px 90px
+        border-width: 70px 0px 0px 70px
         border-color: transparent transparent transparent #F6A700
-        animation: worde-2 2s infinite linear
+        animation: worde-2 2s  linear
+        animation-iteration-count:3
 
 .worde-3
-        width: 160px
+        width: 140px
         height: 1px
-        top:89px
+        top:70px
         position: absolute
         border-top: solid #925328 2px
-        animation: worde-3 2s infinite linear
+        animation: worde-3 2s linear
+        animation-iteration-count:3
 
 @keyframes worde
   0%
-    width: 100px
+   
 
   25%
 
   50%
-    width: 60px
-    height: 170px
+    width: 80px
+    height: 130px
 
   75%
 
   100%
-    width: 100px
+   
 
 @keyframes worde-1
   0%
@@ -515,9 +525,9 @@ button
   25%
 
   50%
-
+   border-width: 50px 50px 0 0
   75%
-    left: 50px
+
 
   100%
 
@@ -527,10 +537,9 @@ button
   25%
 
   50%
-
+   border-width: 50px 0px 0px 50px
   75%
-    left: 50px
-    top: 70px
+  
 
   100%
 
@@ -541,7 +550,6 @@ button
 
   50%
     width: 50px
-    top: 75px
 
   75%
 
@@ -556,22 +564,24 @@ button
   position: relative
 
 .wordx
-        width: 180px
+        width: 140px
         height: 1px
-        top:89px
+        top:70px
         position: absolute
         border-top: solid #6D00BF 2px
         transform: rotate(45deg) translateY(100%)
-        animation: wordx 2s infinite linear
+        animation: wordx 2s linear
+        animation-iteration-count:3
 
 .wordx-1
-        width: 180px
+        width: 140px
         height: 1px
-        top:89px
+        top:70px
         position: absolute
         border-top: solid #6D00BF 2px
         transform: rotate(-45deg) translateY(100%)
-        animation: wordx-1 2s infinite linear
+        animation: wordx-1 2s linear
+        animation-iteration-count:3
       
 .wordx-2
         width: 0
@@ -580,20 +590,22 @@ button
         left:10px
         position: absolute
         border-style: solid
-        border-width: 80px 80px 0px 80px
+        border-width: 60px 60px 0px 60px
         border-color: #B377FF transparent transparent  transparent
-        animation: wordx-2 2s infinite linear 
+        animation: wordx-2 2s linear 
+        animation-iteration-count:3
 
 .wordx-3
         width: 0
         height: 0
-        top:100px
+        top:80px
         left:10px
         position: absolute
         border-style: solid
-        border-width: 0px 80px 80px 80px
+        border-width: 0px 60px 60px 60px
         border-color:  #B377FFdc transparent #B377FF transparent 
-        animation: wordx-3 2s infinite linear
+        animation: wordx-3 2s linear
+        animation-iteration-count:3
 
 @keyframes wordx
   0%
@@ -627,9 +639,9 @@ button
   50%
     width: 0
     height: 0
-    top: 100px
+    top: 80px
     left: 10px
-    border-width: 60px 60px 60px 60px
+    border-width: 40px 40px 40px 40px
 
   75%
 
@@ -658,49 +670,53 @@ button
   position: relative
   
 .words
-        width: 90px
-        height: 90px
+        width: 60px
+        height: 60px
         left:90px
         position: absolute
-        border-radius: 0 100px 0 0
+        border-radius: 0 70px 0 0
         background-color: #EF788C
-        animation: words 2s infinite linear
+        animation: words 2s linear
+        animation-iteration-count:3
 
 .words-1
-        width: 90px
-        height: 90px
+        width: 60px
+        height: 60px
         top:90px
         position: absolute
-        border-radius: 0 0 0 100px 
+        border-radius: 0 0 0 70px 
         background-color: #C9445A
         z-index:1
-        animation: words-1 2s infinite linear
+        animation: words-1 2s linear
+        animation-iteration-count:3
       
 .words-2
         width: 0
         height: 0
-        top:60px
-        left:43px
+        top:70px
+        left:28px
         border-radius: 0 90px 0px 90px
         position: absolute
         border-style: solid
-        border-width: 0px 90px 90px 90px
+        border-width: 0px 60px 60px 60px
         border-color: transparent transparent transparent  #FEB0CB 
         transform: rotate(-70deg) translateY(0%)
-        animation: words-2 2s infinite linear
+        animation: words-2 2s linear
+        animation-iteration-count:3
 
 
 .words-3
-        width: 100px
-        height: 100px
-        top:40px
-        left:40px
+        width: 83px
+        height: 85px
+        top:30px
+        left:30px
         position: absolute
         border:2px solid #860218
         border-color: transparent #860218 transparent  #860218
         transform: rotate(-45deg) translateY(0%)
         z-index:1
-        animation: words-3 2s infinite linear
+        animation: words-3 2s linear
+        animation-iteration-count:3
 
 @keyframes words
   0%
@@ -766,17 +782,18 @@ button
 
   100%  
 .words-4
-        width: 140px
-        height: 141px
-        top:20px
-        left:20px
+        width: 120px
+        height: 115px
+        top:15px
+        left:13px
         position: absolute
         border:2px solid #860218
         border-radius:100px
         border-color:#860218 transparent #860218 transparent  
         transform: rotate(-45deg) translateY(0%)
         z-index:1
-        animation: words-4 2s infinite linear
+        animation: words-4 2s linear
+        animation-iteration-count:3
 
 .word-8
   width: 100%
@@ -788,44 +805,48 @@ button
   position: relative
 
 .wordy
-        width: 100px
+        width: 70px
         height: 1px
         top:45px
         position: absolute
         border-top: solid #B4A835 2px
         transform: rotate(45deg) translateY(100%)
         z-index:1
-        animation: wordy 2s infinite linear
+        animation: wordy 2s  linear
+        animation-iteration-count:3
 
 .wordy-1
-        width: 100px
+        width: 70px
         height: 1px
         top:45px
-        left:65px
+        left:45px
         position: absolute
         border-top: solid #B4A835 2px
         transform: rotate(-45deg) translateY(100%)
-        animation: wordy-1 2s infinite linear
+        animation: wordy-1 2s linear
+        animation-iteration-count:3
         
 .wordy-2
         width: 1px
-        height: 100px
-        top:80px
-        left:80px
+        height: 70px
+        top:70px
+        left:55px
         position: absolute
         border-right: solid #B4A835 2px
-        animation: wordy-2 2s infinite linear
+        animation: wordy-2 2s linear
+        animation-iteration-count:3
 
 .wordy-3
         width: 0px
         height: 0px
-        left:-15px
+        left:-25px
         top:15px
         position: absolute
         border-style: solid
-        border-width: 75px 75px 0px 75px
+        border-width: 65px 65px 0px 65px
         border-color: #FFF07B transparent transparent transparent
-        animation: wordy-3 2s infinite linear
+        animation: wordy-3 2s linear
+        animation-iteration-count:3
 
 @keyframes wordy
   0%
@@ -880,7 +901,7 @@ button
     top: 15px
     position: absolute
     border-style: solid
-    border-width: 75px 75px 0px 75px
+    border-width: 65px 65px 0px 65px
 
   75%
 
@@ -923,22 +944,23 @@ button
           height: 0
           position: absolute
           border-style: solid
-          border-width: 180px 0 0 180px
+          border-width: 140px 0 0 140px
           border-color: transparent transparent transparent #5A4BB2
-          animation: wordm 2s infinite linear
-        
+          animation: wordm 2s linear
+          animation-iteration-count:3
 
 .wordm-1
           width: 0
           height: 0
           position: absolute
           border-style: solid
-          border-width: 0px 0 180px 180px
+          border-width: 0px 0 140px 140px
           border-color: transparent transparent  #A48DFF transparent
-          animation: wordm-1 2s infinite linear
+          animation: wordm-1 2s linear
+          animation-iteration-count:3
 
 .wordm-2
-        width: 135px
+        width: 100px
         height: 40px
         top:50px
         left:20px
@@ -946,13 +968,14 @@ button
         border: solid #F0BBE2 2px
         border-color: transparent #F0BBE2 transparent   #F0BBE2 
         z-index:1
-        animation: wordm-2 2s infinite linear
+        animation: wordm-2 2s linear
+        animation-iteration-count:3
 
 .wordm-3
         width: 1px
-        height: 97px
-        left:-16px
-        top:-32px
+        height: 70px
+        left:-6px
+        top:-8px
         position: absolute
         border-right: solid #F0BBE2 2px
         z-index:1
@@ -960,24 +983,25 @@ button
 
 .wordm-4
         width: 1px
-        height: 100px
-        left:122px
-        top:35px
+        height: 70px
+        left:95px
+        top:40px
         position: absolute
         border-right: solid #F0BBE2 2px
         z-index:1
         transform: rotate(45deg) translateY(0%)
-        animation: wordm-4 2s infinite linear
+        animation: wordm-4 2s  linear
+        animation-iteration-count:3
 
 @keyframes wordm
   0%
-    border-width: 180px 0 0 180px
+    border-width: 140px 0 0 140px
 
   25%
-    border-width: 180px 0 0 100px
+    border-width: 140px 0 0 100px
 
   50%
-    border-width: 180px 0 0 180px
+    border-width: 140px 0 0 140px
 
   75%
 
@@ -986,15 +1010,15 @@ button
 
 @keyframes wordm-1
   0%
-    border-width: 0px 0 180px 180px
+    border-width: 0px 0 140px 140px
 
   25%
 
   50%
-    border-width: 0px 0 180px 120px
+    border-width: 0px 0 140px 80px
 
   75%
-    border-width: 0px 0 180px 180px
+    border-width: 0px 0 140px 140px
 
   100%
 
